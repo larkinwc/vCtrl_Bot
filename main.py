@@ -19,7 +19,7 @@ discord_token = ''
 
 try:
     settings = open("settings.txt", 'r')
-    line = settings.readline()
+    line = settings.readline().rstrip()
     g._dir = line.split(':')[1] + '/'
     g._repo = g._token.get_user().get_repo(line.split(':')[1].split('/')[1])
     g._repoName = line.split(':')[1].split('/')[1]
