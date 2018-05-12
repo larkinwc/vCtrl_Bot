@@ -1,5 +1,5 @@
 [![Documentation Status](https://readthedocs.org/projects/vctrl-bot/badge/?version=latest)](http://vctrl-bot.readthedocs.io/en/latest/?badge=latest)
-![Heroku](https://heroku-badge.herokuapp.com/?app=vctrl-bot-discord)
+
 
 # vCtrl_Bot
 
