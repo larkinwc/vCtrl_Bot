@@ -48,17 +48,54 @@
 <li>Annoy you if you send too many attachments!</li>
 </ul>
 </div>
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<p>$status - Gives you info on the currently setup repo
+$undo - Undoes the last commit
+$ignore - This will ignore the specified . extension from being added to version control.
+$pull - this will pull any commits from the GitHub repo
+$help - this will say you can use commands to view commands, and also link the documentation page for this bot.
+$commands - lists usable commands</p>
+</div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Run $project by running:</p>
+</div>
+<div class="section" id="prereqs">
+<h2>Prereqs<a class="headerlink" href="#prereqs" title="Permalink to this headline">¶</a></h2>
+<p>Python 3.5+
+Discord.py 0.16+
+PyGithub 1.3x+
+GitPython 2.1.9+
+aiohttp 1.0.5+
+urllib3 1.22+</p>
+<p>Run vCtrl by running:</p>
 <blockquote>
 <div>python3 main.py</div></blockquote>
+<p>Classes:</p>
+<dl class="docutils">
+<dt>Version - contains main git commands and tracks how many commits have been made</dt>
+<dd><dl class="first last docutils">
+<dt>setup(repoName):</dt>
+<dd>“”” this should be run if a repo hasn’t been initialized yet. “”“</dd>
+<dt>do_commit(files):</dt>
+<dd>“”” using path file, add file to project if not already included, otherwise update it “”“</dd>
+<dt>undo_commit(commit = 0):</dt>
+<dd>“”” given a commit (defaults to last commit id), undo it “”“</dd>
+<dt>get_commitID():</dt>
+<dd>“”” returns last commit performed “”“</dd>
+<dt>get_info():</dt>
+<dd>“”” will use github package to find out the current status of the repo, total commits and time last updated “”“</dd>
+<dt>write_settings():</dt>
+<dd>“”” writes settings to settings.txt so in future sessions the info will not need to be input again. “”“</dd>
+</dl>
+</dd>
+</dl>
 </div>
 <div class="section" id="contribute">
 <h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Issue Tracker: github.com/$project/$project/issues</li>
-<li>Source Code: github.com/$project/$project</li>
+<li>Issue Tracker: <a class="reference external" href="https://github.com/luhrkin/vCtrl_bot/issues">https://github.com/luhrkin/vCtrl_bot/issues</a></li>
+<li>Source Code: <a class="reference external" href="https://github.com/luhrkin/vCtrl_bot">https://github.com/luhrkin/vCtrl_bot</a></li>
 </ul>
 </div>
 <div class="section" id="support">
@@ -83,7 +120,9 @@ email me at <a class="reference external" href="mailto:larkinwc&#37;&#52;&#48;ut
 <li><a class="reference internal" href="#">Welcome to vCtrl Discord Bot’s documentation!</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a><ul>
 <li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#commands">Commands</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#prereqs">Prereqs</a></li>
 <li><a class="reference internal" href="#contribute">Contribute</a></li>
 <li><a class="reference internal" href="#support">Support</a></li>
 <li><a class="reference internal" href="#license">License</a></li>

@@ -86,6 +86,7 @@ class Version(object):
         return "Uh oh there appears to be a problem with the repo"
     
     def write_settings(self):
+        """ writes settings to settings.txt so in future sessions the info will not need to be input again. """
         settings = open('settings.txt', 'w')
         settings.write("repo:" + self._repoName + "\n")
         settings.write("ignore:" + str(self._ignore))

@@ -83,4 +83,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * I would also like to thank the School of Design and Creative Technologies at UT for the amazing academic program that is being developed here.
 
 
-# One version control bot, one step at a time.
+# One small version control bot, one large step at a time.
